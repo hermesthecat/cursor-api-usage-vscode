@@ -1,7 +1,7 @@
 {
-  "name": "hello-world-statusbar",
-  "displayName": "Hello World Statusbar",
-  "description": "Basit bir statusbar eklentisi",
+  "name": "cursor-api-usage",
+  "displayName": "Cursor API Usage",
+  "description": "Cursor API kullanım örneği",
   "version": "0.0.1",
   "publisher": "A. Kerem Gök",
   "engines": {
@@ -14,8 +14,8 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "hello-world-statusbar.showMessage",
-      "title": "Hello World: Show Message"
+      "command": "cursor-api-usage.showMessage",
+      "title": "Cursor API: Show Message"
     }]
   },
   "scripts": {

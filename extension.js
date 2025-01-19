@@ -5,16 +5,16 @@ let statusBarItem;
 function activate(context) {
     // Durum çubuğu öğesini oluştur
     statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 100);
-    statusBarItem.text = "Hello World!";
+    statusBarItem.text = "Cursor API";
     statusBarItem.show();
 
     // Komut kaydı
-    let disposable = vscode.commands.registerCommand('hello-world-statusbar.showMessage', () => {
-        vscode.window.showInformationMessage('Hello World from Status Bar!');
+    let disposable = vscode.commands.registerCommand('cursor-api-usage.showMessage', () => {
+        vscode.window.showInformationMessage('Cursor API Usage Example!');
     });
 
     // Tıklanabilir yap
-    statusBarItem.command = 'hello-world-statusbar.showMessage';
+    statusBarItem.command = 'cursor-api-usage.showMessage';
 
     context.subscriptions.push(statusBarItem);
     context.subscriptions.push(disposable);
