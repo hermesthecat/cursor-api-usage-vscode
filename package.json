@@ -1,0 +1,31 @@
+{
+  "name": "hello-world-statusbar",
+  "displayName": "Hello World Statusbar",
+  "description": "Basit bir statusbar eklentisi",
+  "version": "0.0.1",
+  "publisher": "A. Kerem Gök",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "hello-world-statusbar.showMessage",
+      "title": "Hello World: Show Message"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.10.0",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.0"
+  }
+} 
