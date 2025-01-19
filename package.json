@@ -13,10 +13,12 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "cursor-api-usage.showMessage",
-      "title": "Cursor API: Show Message"
-    }]
+    "commands": [
+      {
+        "command": "cursor-api-usage.showMessage",
+        "title": "Cursor API: Show Message"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
@@ -28,4 +30,4 @@
     "eslint": "^8.54.0",
     "typescript": "^5.3.0"
   }
-} 
+}
